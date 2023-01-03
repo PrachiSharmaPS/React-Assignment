@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      a: '',
+      convert: false,
+    };
+  }
+  render() {
+    return (
+      <div className='App'>
+        <textarea
+          value={this.state.a}
+          onChange={(e) => this.setState({ a: e.target.value })}
+        />
+        <br />
+        <button
+          onClick={() => {
+            this.setState({
+              convert: !this.state.convert,
+            });
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          Click to Covert
+        </button>
+        {this.state.convert && <p> {this.state.a.toUpperCase()}</p>}
+      </div>
+    );
+  }
 }
 
 export default App;
