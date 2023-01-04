@@ -10,7 +10,7 @@ export default function Form() {
   const [gender, setgender] = useState('');
 
  
-  // States for checking the errors
+  //  States for checking the errors
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
  
