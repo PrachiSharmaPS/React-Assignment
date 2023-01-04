@@ -1,16 +1,51 @@
-/* .App {
-  text-align: center;
-} */
-
-
 
 .App {
-  background-color: #282c34;
-  min-height: 100vh;
+  text-align: center;
+  background-color:rgb(126, 0, 128);
+}
+ 
+.label{
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+ 
+.input{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  
+}
+.btn{
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+}
+ 
+.messages{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #1cd8bf;
+}
+ 
+.error{
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+ 
+.success{
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
 }
