@@ -1,51 +1,23 @@
 
-.App {
+.app {
   text-align: center;
   background-color:rgb(126, 0, 128);
+  padding: 20px;
+ border: 5px solid
 }
- 
-.label{
-  display: block;
-  font-size: larger;
-  color: white;
-  padding: 5px;
+.count{
+  font-size: 39px;
+  color: black
+
 }
- 
-.input{
-  font-size: larger;
-  padding: 5px;
-  margin: 2px;
+.app button {
+    color: white;
+     background-color: red;
+    border-radius: 10px;
+    font-size: larger;
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
   
 }
-.btn{
-  color: white;
-  background-color: red;
-  border-radius: 5px;
-  font-size: larger;
-  display: block;
-  padding: 5px;
-  margin: 10px auto;
-}
  
-.messages{
-  display: flex;
-  justify-content: center;
-}
- 
-.error{
-  display: block;
-  background-color: red;
-  color: white;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
-}
- 
-.success{
-  display: block;
-  background-color: lightblue;
-  color: black;
-  width: fit-content;
-  height: 50px;
-  padding: 5px;
-}
