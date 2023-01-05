@@ -1,5 +1,5 @@
 ## Assignment - 3
-** Simple Counter
+** Simple Counter **
 
 Summary: 
  
