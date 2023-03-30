@@ -1,46 +1,77 @@
-body {
-  background-size: cover;
-  background-position: center;
-}
-
-form {
-  max-width: 500px;
+#root {
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #17eab9;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
+  padding: 2rem;
   text-align: center;
-  margin-bottom: 20px;
-  color: chocolate;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.valueOne-input label{
+  display: flex;
   font-weight: bold;
+  font-size: medium;
+  font-family:'Courier New', Courier, monospace;
+}
+.valueOne-input input{
+  display: flex;
+  margin-top: 7px;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
 }
 
-input,
-select {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.valueSecond-input label{
+  margin-top: 7px;
+  display: flex;
+  font-weight: bold;
+  font-size: medium;
+  font-family:'Courier New', Courier, monospace;
 }
 
-input:focus,
-select:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+.valueSecond-input input{
+  display: flex;
+  margin-top: 7px;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+  
 }
 
 .button[type="submit"] {
@@ -53,14 +84,7 @@ select:focus {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   align-items: center;
+  margin: 10px;
 }
 
-.button[type="submit"]:hover {
-  background-color: #3e8e41;
-  display: block;
-}
 
-.userData {
-     text-align: center;
-     
-}
