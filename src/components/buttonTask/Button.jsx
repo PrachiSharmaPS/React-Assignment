@@ -5,6 +5,7 @@ const ButtonTable = () => {
 
   const handleClick = (buttonName) => {
     const now = new Date();
+    
     const newButtonData = [...buttonData, { buttonName, time: now.toString() }];
     setButtonData(newButtonData);
   };

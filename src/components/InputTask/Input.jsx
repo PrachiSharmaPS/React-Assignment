@@ -7,6 +7,7 @@ const InputForm = () => {
     const newInputs = [...inputs, { value: "" }];
     setInputs(newInputs);
   };
+  
 
   const handleInputChange = (index, event) => {
     const newInputs = [...inputs];

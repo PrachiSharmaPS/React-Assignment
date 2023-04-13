@@ -13,7 +13,6 @@ const Form = () => {
     setShowData(true);
     alert('Registration form submitted !');
    
- 
   };
   return (
     <>
