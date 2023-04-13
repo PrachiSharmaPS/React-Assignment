@@ -11,7 +11,7 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setShowData(true);
-    alert('Registration form submitted!');
+    alert('Registration form submitted !');
    
  
   };
